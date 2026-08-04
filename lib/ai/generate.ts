@@ -44,7 +44,7 @@ async function requestModelExcuse(
     client.chat.completions.create({
       model: AI_CONFIG.model,
       temperature: AI_CONFIG.temperature,
-      max_tokens: AI_CONFIG.maxTokens,
+      max_completion_tokens: AI_CONFIG.maxTokens,
       messages: [
         {
           role: "system",
